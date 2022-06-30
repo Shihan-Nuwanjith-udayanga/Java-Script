@@ -9,267 +9,263 @@
 
 <script>
 
-  // ---------- Outputs ----------
-  /*console.log("Hello Console")
+    // ---------- Outputs ----------
+    /*console.log("Hello Console")
 
-  alert("Hello Alert")
+    alert("Hello Alert")
 
-  document.write("Hello Document")*/
+    document.write("Hello Document")*/
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // ---------- Comments ----------
+    // ---------- Comments ----------
 
-  //-single line comments-
-  // console.log("Hello try to comment me");
+    //-single line comments-
+    // console.log("Hello try to comment me");
 
-  //-multiline comments-
-  /*console.log("A");
-  console.log("B");
-  console.log("C");
-  console.log("D");
-  console.log("E");*/
+    //-multiline comments-
+    /*console.log("A");
+    console.log("B");
+    console.log("C");
+    console.log("D");
+    console.log("E");*/
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // var myName="Shihan";
-  // console.log(myName);
+    // var myName="Shihan";
+    // console.log(myName);
 
-  // ---------- loos type and dynamic typing ----------
-/*
-  var myName = "Shihan";
-  typeof myName;
-  // "String"
+    // ---------- loos type and dynamic typing ----------
+    /*
+      var myName = "Shihan";
+      typeof myName;
+      // "String"
 
-  myName = 100;
-  typeof myName;
-  // "number"
+      myName = 100;
+      typeof myName;
+      // "number"
 
-  myName = true;
-  typeof myName;
-  // "boolean"
-*/
+      myName = true;
+      typeof myName;
+      // "boolean"
+    */
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // ---------- Declaration Types ----------
-               /*  Var
-                   let
-                   const*/
+    // ---------- Declaration Types ----------
+    /*  Var
+        let
+        const*/
 
 
-  // ---------- Var Declaration ----------
-  // support dynamic typing
-  // can duplicate identifier
-  // no Scope
-/*
+    // ---------- Var Declaration ----------
+    // support dynamic typing
+    // can duplicate identifier
+    // no Scope
+    /*
 
-  var abc=100;
-  abc=300;
-  // 300
+      var abc=100;
+      abc=300;
+      // 300
 
-  abc="ABC";
-  // "ABC"
-  typeof abc;
-  // "String"
+      abc="ABC";
+      // "ABC"
+      typeof abc;
+      // "String"
 
-  var abc="D";
-  var abc=100;
+      var abc="D";
+      var abc=100;
 
-  abc;
-  // 100
+      abc;
+      // 100
 
-  var age=30;
-  {
-      console.log(age);//valid
-  }
+      var age=30;
+      {
+          console.log(age);//valid
+      }
 
-  ///////////////////////
+      ///////////////////////
 
-  {
-      var name="Shihan";
-  }
-  console.log(name);//valid
+      {
+          var name="Shihan";
+      }
+      console.log(name);//valid
 
-*/
+    */
 
-  // ======================================
+    // ======================================
 
-  // ---------- let Declaration ----------
-  // support dynamic type
-  // cannot duplicate identifier
-  // scope satisfied
+    // ---------- let Declaration ----------
+    // support dynamic type
+    // cannot duplicate identifier
+    // scope satisfied
 
-/*
-  let myName="Shihan";
-  typeof myName;
-  // "String"
+    /*
+      let myName="Shihan";
+      typeof myName;
+      // "String"
 
-  myName=100;
-  typeof myName;
-  // "number"
+      myName=100;
+      typeof myName;
+      // "number"
 
-  let age=10;
-  let age=20; // error
+      let age=10;
+      let age=20; // error
 
-  let name="Shihan"
-  {
-      console.log(name);// valid
-  }
-  ///////////////////////
+      let name="Shihan"
+      {
+          console.log(name);// valid
+      }
+      ///////////////////////
 
-  {
-      let address="Galle";
-  }
-  console.log(address); // error
+      {
+          let address="Galle";
+      }
+      console.log(address); // error
 
-  ///////////////////////
+      ///////////////////////
 
-  {
-      let address="Galle";
-      console.log(address); // valid
-  }
-  */
+      {
+          let address="Galle";
+          console.log(address); // valid
+      }
+      */
 
-  // ========================================
+    // ========================================
 
-  // ---------- const Declaration ----------
-  // read only values
-  // scope satisfied
+    // ---------- const Declaration ----------
+    // read only values
+    // scope satisfied
 
-/*
-  const age = 10;
-  // age = 20; // error
+    /*
+      const age = 10;
+      // age = 20; // error
 
-  {
-      console.log(age);// valid
-  }
-  //////////////////////////
+      {
+          console.log(age);// valid
+      }
+      //////////////////////////
 
-  {
-      const a="Hello";
-  }
-  console.log(a); //error
+      {
+          const a="Hello";
+      }
+      console.log(a); //error
 
-  */
+      */
 
-  //////////////////////////
+    //////////////////////////
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // ---------- Variables ----------
-  // case sensitive
-  // a-z characters
-  // _ and $ can be apply
-  // number can be apply for the second character of the variable
-/*
+    // ---------- Variables ----------
+    // case sensitive
+    // a-z characters
+    // _ and $ can be apply
+    // number can be apply for the second character of the variable
+    /*
 
-  let ab = 100;
-  let aB = 200;
-  // let 2ab=100; //Error
-  let z = 100;
-  let _z = 100;
-  let $_z = 100;
-  let a10 = 100;
-*/
+      let ab = 100;
+      let aB = 200;
+      // let 2ab=100; //Error
+      let z = 100;
+      let _z = 100;
+      let $_z = 100;
+      let a10 = 100;
+    */
 
-  //////////////////////////
+    //////////////////////////
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // ---------- Scopes ----------
-  // Global Scope
-  // local scope
+    // ---------- Scopes ----------
+    // Global Scope
+    // local scope
 
-  // global Scope
-/*
-  var myName="Shihan";
-  let age = 20;
-*/
+    // global Scope
+    /*
+      var myName="Shihan";
+      let age = 20;
+    */
 
-  // local Scope
-/*
-  {
-      let a=10;
-      let b=10; // local scope
+    // local Scope
+    /*
+      {
+          let a=10;
+          let b=10; // local scope
 
-      console.log(a);
-  }
-*/
+          console.log(a);
+      }
+    */
 
 
-  //////////////////////////
+    //////////////////////////
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // ---------- Hoisting ----------
-  // Variable Hoisting
-  // function Hoisting
+    // ---------- Hoisting ----------
+    // Variable Hoisting
+    // function Hoisting
 
 
-/*
-  // Variable Hoisting
-  console.log(x); // undefine
+    /*
+      // Variable Hoisting
+      console.log(x); // undefine
 
-  var x=100;
-  console.log(x); // 100
+      var x=100;
+      console.log(x); // 100
 
-  console.log(g); // undefine but not error
-  var g = 200;
+      console.log(g); // undefine but not error
+      var g = 200;
 
-  //////////////////////////////////////////
-  console.log("First Console - " + m) // First Console - undefined
-  var m=200;
-  console.log("Second Console - " + m); // Second Console - 200
+      //////////////////////////////////////////
+      console.log("First Console - " + m) // First Console - undefined
+      var m=200;
+      console.log("Second Console - " + m); // Second Console - 200
 
-  //////////////////////////////////////////
-  console.log("First Console - " + f) // error
-  var mc=200;
-  console.log("Second Console - " + f); // error
-  */
+      //////////////////////////////////////////
+      console.log("First Console - " + f) // error
+      var mc=200;
+      console.log("Second Console - " + f); // error
+      */
 
 
 
-  // Function Hoisting
-/*
-  function getMyName(){
-      console.log("My Name is Shihan");
-  }
+    // Function Hoisting
+    /*
+      function getMyName(){
+          console.log("My Name is Shihan");
+      }
 
-  getMyName() //Calling Statement
- */
+      getMyName() //Calling Statement
+     */
 
-  // ===========================================================================
+    // ===========================================================================
 
-  // Data Types in JS
-/*
-    String
-    Boolean
-    Number
-    null
-    undefined
- */
+    // Data Types in JS
+    /*
+        String
+        Boolean
+        Number
+        null
+        undefined
+     */
 
-  // ==========================================
+    // ==========================================
 
-  // Null and Undefined
-/*
-  var myName
-  typeof myName
-  // "undefine"
-  console log(c)
+    // Null and Undefined
+    /*
+      var myName
+      typeof myName
+      // "undefine"
+      console log(c)
 
 
-  var v1=null
-  typeof v1;
-  // "Object"
-*/
+      var v1=null
+      typeof v1;
+      // "Object"
+    */
 
-  // ==========================================
-
-
-
-
+    // ==========================================
 
 
 </script>
