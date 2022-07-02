@@ -492,7 +492,43 @@
 
     ///////////////////////////////////////////////
 
+    // we can also add methods inside objects
+/*
+    var customer = {
+        'id' : 'C001',
+        'name': 'Nimal',
+        'getMyName' : function (){ // anonymous function
+            console.log("My Name is Nimal");
+        }
+    }
 
+    customer // check customer object
+    // {id:"C001", name:"Nimal", getMyName: f}
+
+    customer.getMyName
+    // f(){
+    //     console.log("My Name is Nimal")
+    // }
+
+    customer.getMyName();
+    // My Name is Nimal
+
+    customer.getMyID = function (){ // add new method dynamically
+        console.log("My ID is C001");
+    }
+
+    customer
+    // {id:"C001", name:"Nimal", getMyName: f, getMyID: f}
+
+    customer.getMyID();
+    // My ID is C001
+
+    delete customer.getMyID() // delete method
+    // true
+
+    customer
+    // {id:"C001", name:"Nimal", getMyName: f}
+*/
 
 
 </script>
