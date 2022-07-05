@@ -713,6 +713,7 @@
     // ====================================================================================
 
     // ------------------- nested function -------------------
+/*
     function mainMethod(){
         console.log("Main method called");
         nestedMethod();
@@ -721,8 +722,25 @@
         }
     }
     mainMethod();
+*/
 
     // -----------------------------------------------
+
+    // check global scope variable access local scope
+    var id = "C001";
+    let name = "Dasun";
+
+    function mainMethod(){
+        console.log("Main method called");
+        console.log(id,name);
+        nestedMethod();
+        function nestedMethod(){
+            console.log("Nested Method is Called");
+            console.log(id,name);
+        }
+    }
+    mainMethod();
+
 
 
 
