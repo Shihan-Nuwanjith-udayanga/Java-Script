@@ -710,10 +710,19 @@
     */
 
 
+    // ====================================================================================
 
+    // ------------------- nested function -------------------
+    function mainMethod(){
+        console.log("Main method called");
+        nestedMethod();
+        function nestedMethod(){
+            console.log("Nested Method is Called");
+        }
+    }
+    mainMethod();
 
-
-
+    // -----------------------------------------------
 
 
 
