@@ -953,8 +953,86 @@
         // can we delete
         // delete ob.id; //can
 
-
     */
+
+
+    // -------------------------------------------------------------------------
+
+    // --------------- Enumerable - false ----------------------------
+
+/*
+    ob.id = "C001";
+    // "C001"
+
+    Object.getOwnPropertyDescriptor(ob,'id');
+    //{value: "C001", writable:true, enumerable:true, configurable:true}
+
+    //Changing both descriptors to false
+    Object.defineProperty(ob,'id',{
+        wirtable: false,
+        enumerable: false
+    });
+
+    Object.getOwnPropertyDescriptor(ob,'id');
+    //{value: "C001", writable:false, enumerable:false, configurable:true}
+
+    ob.id=1; //try to change
+
+    Object.keys(ob); //try to get keys
+    //["name"] //key id is missing
+
+    //delete..?
+    delete ob.id //posible
+
+    //can get keys of a object in this way too
+    //alternative for Object.keys();
+    for(var i in ob){
+        console.log(i);
+    }
+*/
+
+    // -------------------------------------------------------------------------
+
+    // --------------- Configurable - false ----------------------------
+
+/*
+    var ob = {
+        'id':'C001'
+    }
+
+    Object.getOwnPropertyDescriptor(ob,'id');
+    //{value: "C001", writable:true, enumerable:true, configurable:true}
+
+    // changing all descriptors to false
+    Object.defineProperty(ob,'id',{
+        configurable: false,
+        enumerable: false,
+        writable: false
+    });
+
+    //checking again
+    Object.getOwnPropertyDescriptor(ob,'id');
+    //{value: "C001", writable:false, enumerable:false, configurable:false}
+
+    //cannot change the value
+    ob.id='C'
+    // "C"
+
+    //Cannot get the keys also
+    Object.keys(ob);
+
+    //Cannot delete alse
+    delete ob.id
+    // false
+*/
+
+
+
+
+
+
+
+
 
 
 
