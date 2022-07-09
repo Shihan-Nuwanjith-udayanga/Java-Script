@@ -925,6 +925,31 @@
 */
 
 
+    // ------------- Writable - false -----------------
+    /*
+        var ob = {
+            'id' : 'c001'
+        }
+
+        Object.getOwnPropertyDescriptor(ob.'id'); //View the descriptors
+        //{value:"C001", writable:true, enumerable:true, configurable:true}
+
+        //change the descriptors
+        Object.defineProperty(ob,'id',{
+            writable:false
+        });
+
+        Object.getOwnPropertyDescriptor(ob,'id');
+        // {value:"C001", writable:false, enumerable:true, configurable:true}
+
+        ob.id="C002";//try to change
+
+        ob.id
+        // "C001" but not change
+    */
+
+
+
 
 
 
