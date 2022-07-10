@@ -1040,6 +1040,28 @@
 */
 
 
+    // ----------------- Accessor Properties --------------------
+    // accessor properties to == no direct values for the properties
+    // value can be assigned by getter and setter after defined
+
+/*
+    var customer = {};
+    //accessor
+
+    Object.defineProperty(ob, 'id', {
+        get(){
+            return id;
+        },
+        set(v){
+            id = v;
+        },
+        enumerable: true, //default false, we can change them
+        configurable: true //default false, we can change them
+        //writable: false, error //because of there is no value in accessor properties we cannot apply this descriptor here
+        //value: 100 error // accessors dont have values when it defined
+    });
+*/
+
 
 
 
