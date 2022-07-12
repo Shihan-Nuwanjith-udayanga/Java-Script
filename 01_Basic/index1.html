@@ -1064,7 +1064,51 @@
 
 
     // ======================================================================
-    // ----------------- Accessor Properties --------------------
+    // ----------------- Object.Seal(); --------------------
+    //SEAL
+    // configuration false in all properties
+    // cannot add or delete any property
+    // can change values
+    // property keys are countable
+
+/*
+    var customer={
+        'id' : 'C001',
+        'name' : 'Nimal'
+    }
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C001', writable: true, enumerable: true, configurable: true}name: {value: 'Nimal', writable: true, enumerable: true, configurable: true}[[Prototype]]: Object
+
+    Object.seal(customer);
+    // {id: 'C001', name: 'Nimal'}
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C001', writable: true, enumerable: true, configurable: false}name: {value: 'Nimal', writable: true, enumerable: true, configurable: false}[[Prototype]]: Object
+
+    delete customer.id
+    // false
+
+    customer.id = "C002";
+    // 'C002'
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C002', writable: true, enumerable: true, configurable: false}name: {value: 'Nimal', writable: true, enumerable: true, configurable: false}[[Prototype]]: Object
+
+    customer.age = 40;
+    // 40
+
+    customer;
+    // {id: 'C002', name: 'Nimal'}
+
+    customer.age
+    // undefined
+*/
+
+
+
+
+
 
 
 
