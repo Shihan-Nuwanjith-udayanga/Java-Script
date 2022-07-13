@@ -1105,6 +1105,51 @@
     // undefined
 */
 
+    // --------------------------------------------------------------------------------------
+
+    // ----------------- Object.freeze(); --------------------
+    //Freeze
+    // cannot add or delete any property
+    // cannot change values
+    // property keys are countable
+
+/*
+    var customer={
+        'id' : 'C001',
+        'name' : 'Nimal'
+    }
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C001', writable: true, enumerable: true, configurable: true}name: {value: 'Nimal', writable: true, enumerable: true, configurable: true}[[Prototype]]: Object
+
+    Object.freeze(customer);
+    // {id: 'C001', name: 'Nimal'}
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C001', writable: false, enumerable: true, configurable: false}name: {value: 'Nimal', writable: false, enumerable: true, configurable: false}[[Prototype]]: Object
+
+    customer.id=100;
+    // 100
+
+    Object.getOwnPropertyDescriptors(customer);
+    // {id: {…}, name: {…}}id: {value: 'C001', writable: false, enumerable: true, configurable: false}name: {value: 'Nimal', writable: false, enumerable: true, configurable: false}[[Prototype]]: Object
+
+    delete customer.id
+    // false
+
+    customer.age=20;
+    // 20
+
+    customer
+    // {id: 'C001', name: 'Nimal'}
+  */
+
+    // ===================================================================================================
+
+
+
+
+
 
 
 
